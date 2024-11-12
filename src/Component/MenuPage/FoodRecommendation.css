@@ -1,0 +1,37 @@
+.recommendation-container {
+    width: 100%; /* Full width of the parent container */
+    max-width: 600px; /* Set a max width for the recommendations */
+    margin: auto; /* Center the recommendation container */
+  }
+  
+  .scrollable-recommendations {
+    max-height: 400px; /* Set a fixed height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Add some padding */
+  }
+  
+  .dish-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center alignment */
+    align-items: center; /* Center alignment */
+    width: 200px; /* Set a fixed width for the container */
+    height: auto; /* Allow dynamic height */
+    margin: 0 auto; /* Centering the container */
+  }
+  
+  .dish-image {
+    width: 100%; /* Ensure images take the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Limit the max height of the image */
+    object-fit: cover; /* Cover the container without distortion */
+  }
+  
+  .dish-name {
+    text-align: center; /* Center the text */
+    font-size: 14px; /* Font size for dish names */
+    margin-top: 4px; /* Space above the dish name */
+    overflow-wrap: break-word; /* Allow word breaks for long dish names */
+    color: black; /* Ensure dish names are displayed in black */
+  }
+  
