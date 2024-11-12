@@ -1,0 +1,121 @@
+.personal-info-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.personal-info-layout {
+  width: 20%; /* Adjusted to 20% for a narrower layout */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #f3f4f6;
+  z-index: 10;
+}
+
+.personal-info-content {
+  margin-left: 30%; /* Matches the width of the layout */
+  width: 60%; /* Center the content by adjusting width */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal-info-form {
+  width: 100%;
+  max-width: 500px; /* Slightly reduced max width for the input fields */
+}
+
+.personal-info-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.personal-info-centered-video {
+  height: 80px; /* Reduced video size */
+  border-radius: 100%;
+}
+
+.personal-info-heading {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center; /* Center the heading text */
+}
+
+.personal-info-form-group {
+  margin-bottom: 1rem;
+  width: 100%; /* Ensure form group takes full width */
+}
+
+.personal-info-form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4a5568;
+  padding: 5px;
+}
+
+.personal-info-form-input {
+  margin-top: 0.25rem;
+  display: block;
+  width: 100%;
+  border: 1px solid #d2d6dc;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.personal-info-submit-button {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Make the button take full width */
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .personal-info-container {
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .personal-info-layout {
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+
+  .personal-info-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .personal-info-form {
+    max-width: 100%;
+  }
+
+  .personal-info-submit-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .personal-info-form {
+    max-width: 100%;
+  }
+
+  .personal-info-centered-video {
+    height: 80px;
+  }
+}

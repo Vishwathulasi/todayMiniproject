@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
 import LandingPage from './LandingPage'
-import LoginForm from './LoginPage'
 
 
 const HomePage = () => {

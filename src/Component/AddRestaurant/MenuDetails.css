@@ -1,0 +1,230 @@
+* {
+    color: #666;
+}
+
+.menu-details-large-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Layout fixed to the left */
+.menu-details-layout-container {
+    width: 25%;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+/* Main content area on the right */
+.menu-details-page-container {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top but with reduced space */
+    padding: 5rem 0;
+}
+
+/* Center the main content */
+.menu-details-page-content {
+    width: 100%;
+    max-width: 800px; /* Control the maximum width of the content */
+    padding: 0 2rem; /* Side padding */
+}
+
+/* Video container */
+.menu-details-page-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.menu-details-page-centered-video {
+    height: 100px;
+    border-radius: 100%;
+}
+
+/* Form styling */
+.menu-details-page-form-group {
+    margin-bottom: 20px;
+}
+
+.menu-details-page-form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: black;
+}
+
+.menu-details-page-form-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Upload container and list */
+.menu-details-page-upload-container {
+    padding: 20px;
+    border: 2px dashed #aaa;
+    background-color: #f9f9f9;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-details-page-upload-container.dragover {
+    background-color: #e0f7fa; /* Slightly different color to indicate drag-over */
+}
+
+.menu-details-page-upload-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+    display: block; /* Ensure it's treated as a block-level element */
+}
+
+.menu-details-page-upload-list {
+    margin-top: 10px;
+}
+
+.menu-details-page-upload-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-details-page-upload-item-progress {
+    width: 50%;
+    height: 6px;
+    background-color: #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.menu-details-page-upload-item-progress-bar {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 3px;
+}
+
+.upload-item-complete {
+    background-color: #e8f5e9;
+}
+
+.upload-complete {
+    color: green;
+    display: flex;
+    align-items: center;
+}
+
+.remove-file {
+    margin-left: 10px;
+    color: red;
+    cursor: pointer;
+}
+
+/* Button styling */
+.menu-details-page-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.menu-details-page-back-button,
+.menu-details-page-submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #666;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-details-page-back-button {
+    background-color: #999;
+}
+
+.menu-details-page-submit-button {
+    background-color: red;
+}
+
+/* Heading centered */
+.menu-details-page-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+    /* Stack layout and content on smaller devices (tablets and below) */
+    .menu-details-large-container {
+      flex-direction: column; /* Stack items vertically */
+      overflow: auto;
+    }
+    .menu-details-layout-container{
+        
+        height: 280px;
+        margin-top: 40px;
+        width: 100%;
+    }
+    
+    .menu-details-page-container {
+      width: 100%; /* Full width for both layout and content */
+      height: auto; /* Allow the height to adjust based on content */
+    }
+  
+    .menu-details-page-container {
+      padding: 2rem 0; /* Reduce padding to avoid overlap */
+    }
+  
+    .menu-details-page-content {
+      padding: 0 1rem; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust for smaller tablets and large phones */
+    .menu-details-page-content {
+      max-width: 600px; /* Reduce max width */
+      padding: 0 1rem; /* Side padding for smaller devices */
+    }
+  
+    .menu-details-page-container {
+      padding: 1rem 0; /* Reduce top and bottom padding */
+    }
+  
+    .menu-details-page-upload-icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* For small phones */
+    .menu-details-page-content {
+      max-width: 100%; /* Full width for the content */
+      padding: 0 0.5rem; /* Smaller padding */
+    }
+  
+    .menu-details-page-buttons {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: center; /* Center align buttons */
+    }
+  
+    .menu-details-page-back-button,
+    .menu-details-page-submit-button {
+      width: 100%; /* Full width buttons */
+      margin-top: 10px; /* Space between buttons */
+    }
+  }
+  
